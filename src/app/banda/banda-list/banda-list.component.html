@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Pais</th>
+      <th>Genero</th>
+      <th>Fundacion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let band of bands">
+      <td>{{band.id}}</td>
+      <td>{{band.name}}</td>
+      <td>{{band.country}}</td>
+      <td>{{band.genre}}</td>
+      <td>{{band.foundationYear}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="text-center mt-3 text-light order-last">La banda mas antigua es {{older.name}} fundada
+  hace {{2023 - older.foundationYear}}</div>

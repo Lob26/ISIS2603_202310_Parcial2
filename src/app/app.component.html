@@ -1,16 +1,27 @@
-<div [ngStyle]="{'background-size': 'cover'}" [style.backgroundImage]="'url(' + backgroundImage + ')'">
+<div class="site-content">
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img alt="logo" src="favicon.ico"/></a>
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-text text-black-50" aria-current="page" href="#">Bandas musicales</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-
-
-
-
-
-
+  <main class="mt-5 flex-grow-1 d-flex flex-column align-items-center">
+    <div class="container-fluid flex-grow-1">
+      <div class="row flex-grow-1">
+        <div class="col-md-9 w-100 h-100">
+          <div class="row h-100">
+            <div class="col h-100">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 </div>
-
-
-
-
-

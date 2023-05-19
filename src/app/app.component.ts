@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ISIS2603-Parcial2';
-  backgroundImage: string = '';
 }
