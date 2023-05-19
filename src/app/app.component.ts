@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ISIS2603-Parcial2';
+  backgroundImage: string = '';
 }
